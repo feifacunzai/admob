@@ -368,6 +368,7 @@ public class AdMob: CAPPlugin, GADBannerViewDelegate, GADFullScreenContentDelega
 
     public func adDidPresentFullScreenContent(_ ad: GADFullScreenPresentingAd) {
         NSLog("Ad did present full screen content.")
+        self.bridge?.triggerJSEvent(eventName: "adDidPresentFullScreenContent", target: "window")
         self.notifyListeners("adDidPresentFullScreenContent", data: [:])
     }
 
@@ -381,6 +382,7 @@ public class AdMob: CAPPlugin, GADBannerViewDelegate, GADFullScreenContentDelega
 
     public func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
         NSLog("Ad did dismiss full screen content.")
+        self.bridge?.triggerJSEvent(eventName: "adDidDismissFullScreenContent", target: "window")
         self.notifyListeners("adDidDismissFullScreenContent", data: [:])
     }
 

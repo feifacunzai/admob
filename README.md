@@ -312,6 +312,7 @@ export class AdMobComponent {
 * [`addListener(...)`](#addlistener)
 * [`addListener(...)`](#addlistener)
 * [`addListener(...)`](#addlistener)
+* [`addListener(...)`](#addlistener)
 * [Interfaces](#interfaces)
 * [Enums](#enums)
 
@@ -626,6 +627,26 @@ Notice: Prepared RewardedVideo
 | ------------------ | -------------------------------------- | ----------------------- |
 | **`eventName`**    | <code>"onRewardedVideoAdLoaded"</code> | onRewardedVideoAdLoaded |
 | **`listenerFunc`** | <code>() =&gt; void</code>             |                         |
+
+**Returns:** <code><a href="#pluginlistenerhandle">PluginListenerHandle</a></code>
+
+**Since:** 1.1.2
+
+--------------------
+
+
+### addListener(...)
+
+```typescript
+addListener(eventName: 'adViewWillLeaveApplication', listenerFunc: () => void) => PluginListenerHandle
+```
+
+Notice: Banner ad view weill leave application
+
+| Param              | Type                                      | Description                |
+| ------------------ | ----------------------------------------- | -------------------------- |
+| **`eventName`**    | <code>"adViewWillLeaveApplication"</code> | adViewWillLeaveApplication |
+| **`listenerFunc`** | <code>() =&gt; void</code>                |                            |
 
 **Returns:** <code><a href="#pluginlistenerhandle">PluginListenerHandle</a></code>
 
