@@ -193,6 +193,19 @@ export interface AdMobPlugin {
     listenerFunc: () => void,
   ): PluginListenerHandle;
 
+    /**
+   * Notice: Banner ad view weill leave application
+   *
+   * @group Banner
+   * @param eventName adViewWillLeaveApplication
+   * @param listenerFunc
+   * @since 1.1.2
+   */
+     addListener(
+      eventName: 'adViewWillLeaveApplication',
+      listenerFunc: () => void,
+    ): PluginListenerHandle;
+
   /**
    * Notice: Interstitial ad opened
    *
