@@ -1,0 +1,1120 @@
+{
+  "api": {
+    "name": "AdMobPlugin",
+    "slug": "admobplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "initialize",
+        "signature": "(options: AdMobInitializationOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "AdMobInitializationOptions",
+            "type": "AdMobInitializationOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "group",
+            "text": "Initialize"
+          },
+          {
+            "name": "param",
+            "text": "options AdMobInitializationOptions"
+          },
+          {
+            "name": "since",
+            "text": "1.1.2"
+          }
+        ],
+        "docs": "Initialize AdMob with AdMobInitializationOptions",
+        "complexTypes": [
+          "AdMobInitializationOptions"
+        ],
+        "slug": "initialize"
+      },
+      {
+        "name": "showBanner",
+        "signature": "(options: AdOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "AdOptions",
+            "type": "AdOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "group",
+            "text": "Banner"
+          },
+          {
+            "name": "param",
+            "text": "options AdOptions"
+          },
+          {
+            "name": "since",
+            "text": "1.1.2"
+          }
+        ],
+        "docs": "Show a banner Ad",
+        "complexTypes": [
+          "AdOptions"
+        ],
+        "slug": "showbanner"
+      },
+      {
+        "name": "hideBanner",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "group",
+            "text": "Banner"
+          },
+          {
+            "name": "since",
+            "text": "1.1.2"
+          }
+        ],
+        "docs": "Hide the banner, remove it from screen, but can show it later",
+        "complexTypes": [],
+        "slug": "hidebanner"
+      },
+      {
+        "name": "resumeBanner",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "group",
+            "text": "Banner"
+          },
+          {
+            "name": "since",
+            "text": "1.1.2"
+          }
+        ],
+        "docs": "Resume the banner, show it after hide",
+        "complexTypes": [],
+        "slug": "resumebanner"
+      },
+      {
+        "name": "removeBanner",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "group",
+            "text": "Banner"
+          },
+          {
+            "name": "since",
+            "text": "1.1.2"
+          }
+        ],
+        "docs": "Destroy the banner, remove it from screen.",
+        "complexTypes": [],
+        "slug": "removebanner"
+      },
+      {
+        "name": "prepareInterstitial",
+        "signature": "(options: AdOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "AdOptions",
+            "type": "AdOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "group",
+            "text": "Interstitial"
+          },
+          {
+            "name": "param",
+            "text": "options AdOptions"
+          },
+          {
+            "name": "since",
+            "text": "1.1.2"
+          }
+        ],
+        "docs": "Prepare interstitial banner",
+        "complexTypes": [
+          "AdOptions"
+        ],
+        "slug": "prepareinterstitial"
+      },
+      {
+        "name": "showInterstitial",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "group",
+            "text": "Interstitial"
+          },
+          {
+            "name": "since",
+            "text": "1.1.2"
+          }
+        ],
+        "docs": "Show interstitial ad when it’s ready",
+        "complexTypes": [],
+        "slug": "showinterstitial"
+      },
+      {
+        "name": "prepareRewardVideoAd",
+        "signature": "(options: AdOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "AdOptions",
+            "type": "AdOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "group",
+            "text": "RewardVideo"
+          },
+          {
+            "name": "param",
+            "text": "options AdOptions"
+          },
+          {
+            "name": "since",
+            "text": "1.1.2"
+          }
+        ],
+        "docs": "Prepare a reward video ad",
+        "complexTypes": [
+          "AdOptions"
+        ],
+        "slug": "preparerewardvideoad"
+      },
+      {
+        "name": "showRewardVideoAd",
+        "signature": "() => Promise<AdMobRewardItem>",
+        "parameters": [],
+        "returns": "Promise<AdMobRewardItem>",
+        "tags": [
+          {
+            "name": "group",
+            "text": "RewardVideo"
+          },
+          {
+            "name": "since",
+            "text": "1.1.2"
+          }
+        ],
+        "docs": "Show a reward video ad",
+        "complexTypes": [
+          "AdMobRewardItem"
+        ],
+        "slug": "showrewardvideoad"
+      },
+      {
+        "name": "addListener",
+        "signature": "(eventName: 'bannerViewReceiveAdSize', listenerFunc: (info: AdMobBannerSize) => void) => PluginListenerHandle",
+        "parameters": [
+          {
+            "name": "eventName",
+            "docs": "bannerViewReceiveAdSize",
+            "type": "\"bannerViewReceiveAdSize\""
+          },
+          {
+            "name": "listenerFunc",
+            "docs": "",
+            "type": "(info: AdMobBannerSize) => void"
+          }
+        ],
+        "returns": "PluginListenerHandle",
+        "tags": [
+          {
+            "name": "group",
+            "text": "Banner"
+          },
+          {
+            "name": "param",
+            "text": "eventName bannerViewReceiveAdSize"
+          },
+          {
+            "name": "param",
+            "text": "listenerFunc"
+          },
+          {
+            "name": "since",
+            "text": "3.0.0"
+          }
+        ],
+        "docs": "",
+        "complexTypes": [
+          "PluginListenerHandle",
+          "AdMobBannerSize"
+        ],
+        "slug": "addlistener"
+      },
+      {
+        "name": "addListener",
+        "signature": "(eventName: 'bannerViewDidReceiveAd', listenerFunc: () => void) => PluginListenerHandle",
+        "parameters": [
+          {
+            "name": "eventName",
+            "docs": "bannerViewDidReceiveAd",
+            "type": "\"bannerViewDidReceiveAd\""
+          },
+          {
+            "name": "listenerFunc",
+            "docs": "",
+            "type": "() => void"
+          }
+        ],
+        "returns": "PluginListenerHandle",
+        "tags": [
+          {
+            "name": "group",
+            "text": "Banner"
+          },
+          {
+            "name": "param",
+            "text": "eventName bannerViewDidReceiveAd"
+          },
+          {
+            "name": "param",
+            "text": "listenerFunc"
+          },
+          {
+            "name": "since",
+            "text": "3.0.0"
+          }
+        ],
+        "docs": "Notice: request loaded Banner ad",
+        "complexTypes": [
+          "PluginListenerHandle"
+        ],
+        "slug": "addlistener"
+      },
+      {
+        "name": "addListener",
+        "signature": "(eventName: 'bannerView:didFailToReceiveAdWithError', listenerFunc: (info: AdMobError) => void) => PluginListenerHandle",
+        "parameters": [
+          {
+            "name": "eventName",
+            "docs": "bannerView:didFailToReceiveAdWithError",
+            "type": "\"bannerView:didFailToReceiveAdWithError\""
+          },
+          {
+            "name": "listenerFunc",
+            "docs": "",
+            "type": "(info: AdMobError) => void"
+          }
+        ],
+        "returns": "PluginListenerHandle",
+        "tags": [
+          {
+            "name": "group",
+            "text": "Banner"
+          },
+          {
+            "name": "param",
+            "text": "eventName bannerView:didFailToReceiveAdWithError"
+          },
+          {
+            "name": "param",
+            "text": "listenerFunc"
+          },
+          {
+            "name": "since",
+            "text": "3.0.0"
+          }
+        ],
+        "docs": "Notice: request failed Banner ad",
+        "complexTypes": [
+          "PluginListenerHandle",
+          "AdMobError"
+        ],
+        "slug": "addlistener"
+      },
+      {
+        "name": "addListener",
+        "signature": "(eventName: 'bannerViewWillPresentScreen', listenerFunc: (info: any) => void) => PluginListenerHandle",
+        "parameters": [
+          {
+            "name": "eventName",
+            "docs": "bannerViewWillPresentScreen",
+            "type": "\"bannerViewWillPresentScreen\""
+          },
+          {
+            "name": "listenerFunc",
+            "docs": "",
+            "type": "(info: any) => void"
+          }
+        ],
+        "returns": "PluginListenerHandle",
+        "tags": [
+          {
+            "name": "group",
+            "text": "Banner"
+          },
+          {
+            "name": "param",
+            "text": "eventName bannerViewWillPresentScreen"
+          },
+          {
+            "name": "param",
+            "text": "listenerFunc"
+          },
+          {
+            "name": "since",
+            "text": "3.0.0"
+          }
+        ],
+        "docs": "Notice: full-screen banner view will be presented in response to the user clicking on an ad.",
+        "complexTypes": [
+          "PluginListenerHandle"
+        ],
+        "slug": "addlistener"
+      },
+      {
+        "name": "addListener",
+        "signature": "(eventName: 'bannerViewWillDismissScreen', listenerFunc: (info: any) => void) => PluginListenerHandle",
+        "parameters": [
+          {
+            "name": "eventName",
+            "docs": "bannerViewWillDismissScreen",
+            "type": "\"bannerViewWillDismissScreen\""
+          },
+          {
+            "name": "listenerFunc",
+            "docs": "",
+            "type": "(info: any) => void"
+          }
+        ],
+        "returns": "PluginListenerHandle",
+        "tags": [
+          {
+            "name": "group",
+            "text": "Banner"
+          },
+          {
+            "name": "param",
+            "text": "eventName bannerViewWillDismissScreen"
+          },
+          {
+            "name": "param",
+            "text": "listenerFunc"
+          },
+          {
+            "name": "since",
+            "text": "3.0.0"
+          }
+        ],
+        "docs": "Notice: The full-screen banner view will be dismissed.",
+        "complexTypes": [
+          "PluginListenerHandle"
+        ],
+        "slug": "addlistener"
+      },
+      {
+        "name": "addListener",
+        "signature": "(eventName: 'bannerViewWillDismissScreen', listenerFunc: (info: any) => void) => PluginListenerHandle",
+        "parameters": [
+          {
+            "name": "eventName",
+            "docs": "bannerViewWillDismissScreen",
+            "type": "\"bannerViewWillDismissScreen\""
+          },
+          {
+            "name": "listenerFunc",
+            "docs": "",
+            "type": "(info: any) => void"
+          }
+        ],
+        "returns": "PluginListenerHandle",
+        "tags": [
+          {
+            "name": "group",
+            "text": "Banner"
+          },
+          {
+            "name": "param",
+            "text": "eventName bannerViewWillDismissScreen"
+          },
+          {
+            "name": "param",
+            "text": "listenerFunc"
+          },
+          {
+            "name": "since",
+            "text": "3.0.0"
+          }
+        ],
+        "docs": "Notice: The full-screen banner view will been dismissed.",
+        "complexTypes": [
+          "PluginListenerHandle"
+        ],
+        "slug": "addlistener"
+      },
+      {
+        "name": "addListener",
+        "signature": "(eventName: 'bannerViewDidDismissScreen', listenerFunc: (info: any) => void) => PluginListenerHandle",
+        "parameters": [
+          {
+            "name": "eventName",
+            "docs": "bannerViewDidDismissScreen",
+            "type": "\"bannerViewDidDismissScreen\""
+          },
+          {
+            "name": "listenerFunc",
+            "docs": "",
+            "type": "(info: any) => void"
+          }
+        ],
+        "returns": "PluginListenerHandle",
+        "tags": [
+          {
+            "name": "group",
+            "text": "Banner"
+          },
+          {
+            "name": "param",
+            "text": "eventName bannerViewDidDismissScreen"
+          },
+          {
+            "name": "param",
+            "text": "listenerFunc"
+          },
+          {
+            "name": "since",
+            "text": "3.0.0"
+          }
+        ],
+        "docs": "Notice: The full-screen banner view has been dismissed.",
+        "complexTypes": [
+          "PluginListenerHandle"
+        ],
+        "slug": "addlistener"
+      },
+      {
+        "name": "addListener",
+        "signature": "(eventName: 'onInterstitialAdLoaded', listenerFunc: () => void) => PluginListenerHandle",
+        "parameters": [
+          {
+            "name": "eventName",
+            "docs": "onInterstitialAdLoaded",
+            "type": "\"onInterstitialAdLoaded\""
+          },
+          {
+            "name": "listenerFunc",
+            "docs": "",
+            "type": "() => void"
+          }
+        ],
+        "returns": "PluginListenerHandle",
+        "tags": [
+          {
+            "name": "group",
+            "text": "InterstitialAd"
+          },
+          {
+            "name": "param",
+            "text": "eventName onInterstitialAdLoaded"
+          },
+          {
+            "name": "param",
+            "text": "listenerFunc"
+          },
+          {
+            "name": "since",
+            "text": "1.1.2"
+          }
+        ],
+        "docs": "Notice: Prepared InterstitialAd",
+        "complexTypes": [
+          "PluginListenerHandle"
+        ],
+        "slug": "addlistener"
+      },
+      {
+        "name": "addListener",
+        "signature": "(eventName: 'onRewardedVideoAdLoaded', listenerFunc: () => void) => PluginListenerHandle",
+        "parameters": [
+          {
+            "name": "eventName",
+            "docs": "onRewardedVideoAdLoaded",
+            "type": "\"onRewardedVideoAdLoaded\""
+          },
+          {
+            "name": "listenerFunc",
+            "docs": "",
+            "type": "() => void"
+          }
+        ],
+        "returns": "PluginListenerHandle",
+        "tags": [
+          {
+            "name": "group",
+            "text": "RewardedVideo"
+          },
+          {
+            "name": "param",
+            "text": "eventName onRewardedVideoAdLoaded"
+          },
+          {
+            "name": "param",
+            "text": "listenerFunc"
+          },
+          {
+            "name": "since",
+            "text": "1.1.2"
+          }
+        ],
+        "docs": "Notice: Prepared RewardedVideo",
+        "complexTypes": [
+          "PluginListenerHandle"
+        ],
+        "slug": "addlistener"
+      },
+      {
+        "name": "addListener",
+        "signature": "(eventName: 'adViewWillLeaveApplication', listenerFunc: () => void) => PluginListenerHandle",
+        "parameters": [
+          {
+            "name": "eventName",
+            "docs": "adViewWillLeaveApplication",
+            "type": "\"adViewWillLeaveApplication\""
+          },
+          {
+            "name": "listenerFunc",
+            "docs": "",
+            "type": "() => void"
+          }
+        ],
+        "returns": "PluginListenerHandle",
+        "tags": [
+          {
+            "name": "group",
+            "text": "Banner"
+          },
+          {
+            "name": "param",
+            "text": "eventName adViewWillLeaveApplication"
+          },
+          {
+            "name": "param",
+            "text": "listenerFunc"
+          },
+          {
+            "name": "since",
+            "text": "1.1.2"
+          }
+        ],
+        "docs": "Notice: Banner ad view weill leave application",
+        "complexTypes": [
+          "PluginListenerHandle"
+        ],
+        "slug": "addlistener"
+      },
+      {
+        "name": "addListener",
+        "signature": "(eventName: 'adDidPresentFullScreenContent', listenerFunc: (info: any) => void) => PluginListenerHandle",
+        "parameters": [
+          {
+            "name": "eventName",
+            "docs": "adDidPresentFullScreenContent",
+            "type": "\"adDidPresentFullScreenContent\""
+          },
+          {
+            "name": "listenerFunc",
+            "docs": "",
+            "type": "(info: any) => void"
+          }
+        ],
+        "returns": "PluginListenerHandle",
+        "tags": [
+          {
+            "name": "group",
+            "text": "fullscreen"
+          },
+          {
+            "name": "param",
+            "text": "eventName adDidPresentFullScreenContent"
+          },
+          {
+            "name": "param",
+            "text": "listenerFunc"
+          },
+          {
+            "name": "since",
+            "text": "3.0.0"
+          }
+        ],
+        "docs": "Notice: Interstitial ad opened",
+        "complexTypes": [
+          "PluginListenerHandle"
+        ],
+        "slug": "addlistener"
+      },
+      {
+        "name": "addListener",
+        "signature": "(eventName: 'adDidDismissFullScreenContent', listenerFunc: (info: any) => void) => PluginListenerHandle",
+        "parameters": [
+          {
+            "name": "eventName",
+            "docs": "adDidDismissFullScreenContent",
+            "type": "\"adDidDismissFullScreenContent\""
+          },
+          {
+            "name": "listenerFunc",
+            "docs": "",
+            "type": "(info: any) => void"
+          }
+        ],
+        "returns": "PluginListenerHandle",
+        "tags": [
+          {
+            "name": "group",
+            "text": "fullscreen"
+          },
+          {
+            "name": "param",
+            "text": "eventName adDidDismissFullScreenContent"
+          },
+          {
+            "name": "param",
+            "text": "listenerFunc"
+          },
+          {
+            "name": "since",
+            "text": "3.0.0"
+          }
+        ],
+        "docs": "Notice: Dismiss Content",
+        "complexTypes": [
+          "PluginListenerHandle"
+        ],
+        "slug": "addlistener"
+      },
+      {
+        "name": "addListener",
+        "signature": "(eventName: 'didFailToPresentFullScreenContentWithError', listenerFunc: (info: AdMobError) => void) => PluginListenerHandle",
+        "parameters": [
+          {
+            "name": "eventName",
+            "docs": "didFailToPresentFullScreenContentWithError",
+            "type": "\"didFailToPresentFullScreenContentWithError\""
+          },
+          {
+            "name": "listenerFunc",
+            "docs": "",
+            "type": "(info: AdMobError) => void"
+          }
+        ],
+        "returns": "PluginListenerHandle",
+        "tags": [
+          {
+            "name": "group",
+            "text": "fullscreen"
+          },
+          {
+            "name": "param",
+            "text": "eventName didFailToPresentFullScreenContentWithError"
+          },
+          {
+            "name": "param",
+            "text": "listenerFunc"
+          },
+          {
+            "name": "since",
+            "text": "1.2.0"
+          }
+        ],
+        "docs": "Notice: Interstitial ad is be failed to open",
+        "complexTypes": [
+          "PluginListenerHandle",
+          "AdMobError"
+        ],
+        "slug": "addlistener"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "AdMobInitializationOptions",
+      "slug": "admobinitializationoptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "requestTrackingAuthorization",
+          "tags": [
+            {
+              "text": "https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/3547037-requesttrackingauthorization?changes=latest_minor",
+              "name": "see"
+            },
+            {
+              "text": "1.1.2",
+              "name": "since"
+            }
+          ],
+          "docs": "Use or not requestTrackingAuthorization in iOS(>14)",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "testingDevices",
+          "tags": [
+            {
+              "text": "https://developers.google.com/admob/android/test-ads#enable_test_devices",
+              "name": "see"
+            },
+            {
+              "text": "1.2.0",
+              "name": "since"
+            }
+          ],
+          "docs": "An Array of devices IDs that will be marked as tested devices if {@link AdMobInitializationOptions.initializeForTesting} is true\r\n(Real Ads will be served to Testing devices but they will not count as 'real').",
+          "complexTypes": [],
+          "type": "string[] | undefined"
+        },
+        {
+          "name": "initializeForTesting",
+          "tags": [
+            {
+              "text": "AdMobInitializationOptions.testingDevices",
+              "name": "see"
+            },
+            {
+              "text": "false",
+              "name": "default"
+            },
+            {
+              "text": "1.2.0",
+              "name": "since"
+            }
+          ],
+          "docs": "If set to true, the devices on {@link AdMobInitializationOptions.testingDevices} will\r\nbe registered to receive test production ads.",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        }
+      ]
+    },
+    {
+      "name": "AdOptions",
+      "slug": "adoptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "adId",
+          "tags": [
+            {
+              "text": "https://support.google.com/admob/answer/7356431?hl=en",
+              "name": "see"
+            },
+            {
+              "text": "1.1.2",
+              "name": "since"
+            }
+          ],
+          "docs": "The ad unit ID that you want to request",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "adSize",
+          "tags": [
+            {
+              "text": "SMART_BANNER",
+              "name": "default"
+            },
+            {
+              "text": "1.1.2",
+              "name": "since"
+            }
+          ],
+          "docs": "Banner Ad Size, defaults to SMART_BANNER.\r\nIT can be: SMART_BANNER, BANNER, MEDIUM_RECTANGLE,\r\nFULL_BANNER, LEADERBOARD, SKYSCRAPER, or CUSTOM",
+          "complexTypes": [
+            "AdSize"
+          ],
+          "type": "AdSize | undefined"
+        },
+        {
+          "name": "position",
+          "tags": [
+            {
+              "text": "TOP_CENTER",
+              "name": "default"
+            },
+            {
+              "text": "1.1.2",
+              "name": "since"
+            }
+          ],
+          "docs": "Set Banner Ad position.\r\nTOP_CENTER or CENTER or BOTTOM_CENTER",
+          "complexTypes": [
+            "AdPosition"
+          ],
+          "type": "AdPosition | undefined"
+        },
+        {
+          "name": "isTesting",
+          "tags": [
+            {
+              "text": "false",
+              "name": "default"
+            },
+            {
+              "text": "1.1.2",
+              "name": "since"
+            }
+          ],
+          "docs": "You can use test mode of ad.",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "margin",
+          "tags": [
+            {
+              "text": "0",
+              "name": "default"
+            },
+            {
+              "text": "1.1.2",
+              "name": "since"
+            }
+          ],
+          "docs": "Margin Banner. Default is 0px;\r\nIf position is BOTTOM_CENTER, margin is be margin-bottom.\r\nIf position is TOP_CENTER, margin is be margin-top.",
+          "complexTypes": [],
+          "type": "number | undefined"
+        },
+        {
+          "name": "npa",
+          "tags": [
+            {
+              "text": "https://developers.google.com/admob/ios/eu-consent",
+              "name": "see"
+            },
+            {
+              "text": "https://developers.google.com/admob/android/eu-consent",
+              "name": "see"
+            },
+            {
+              "text": "false",
+              "name": "default"
+            },
+            {
+              "text": "1.2.0",
+              "name": "since"
+            }
+          ],
+          "docs": "The default behavior of the Google Mobile Ads SDK is to serve personalized ads.\r\nSet this to true to request Non-Personalized Ads",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        }
+      ]
+    },
+    {
+      "name": "AdMobRewardItem",
+      "slug": "admobrewarditem",
+      "docs": "For more information\r\nhttps://developers.google.com/admob/android/rewarded-video-adapters?hl=en",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "type",
+          "tags": [],
+          "docs": "Rewarded type user got",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "amount",
+          "tags": [],
+          "docs": "Rewarded amount user got",
+          "complexTypes": [],
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "PluginListenerHandle",
+      "slug": "pluginlistenerhandle",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "remove",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "() => Promise<void>"
+        }
+      ]
+    },
+    {
+      "name": "AdMobBannerSize",
+      "slug": "admobbannersize",
+      "docs": "When notice listener of OnAdLoaded, you can get banner size.",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "width",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "height",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "AdMobError",
+      "slug": "admoberror",
+      "docs": "For more information\r\nhttps://developers.google.com/android/reference/com/google/android/gms/ads/AdError",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "code",
+          "tags": [],
+          "docs": "Gets the error's code.",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "message",
+          "tags": [],
+          "docs": "Gets the message describing the error.",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "cause",
+          "tags": [],
+          "docs": "Gets the cause of this error or null if the cause is nonexistent or unknown.",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "domain",
+          "tags": [],
+          "docs": "Gets the domain of the error.\r\nMobileAds.ERROR_DOMAIN for Google Mobile Ads SDK errors, or a domain defined by mediation networks for mediation errors.",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "enums": [
+    {
+      "name": "AdSize",
+      "slug": "adsize",
+      "members": [
+        {
+          "name": "BANNER",
+          "value": "'BANNER'",
+          "tags": [],
+          "docs": "Mobile Marketing Association (MMA)\r\nbanner ad size (320x50 density-independent pixels)."
+        },
+        {
+          "name": "FLUID",
+          "value": "'FLUID'",
+          "tags": [],
+          "docs": "A dynamically sized banner that matches its parent's\r\nwidth and expands/contracts its height to match the ad's\r\ncontent after loading completes."
+        },
+        {
+          "name": "FULL_BANNER",
+          "value": "'FULL_BANNER'",
+          "tags": [],
+          "docs": "Interactive Advertising Bureau (IAB)\r\nfull banner ad size (468x60 density-independent pixels)."
+        },
+        {
+          "name": "LARGE_BANNER",
+          "value": "'LARGE_BANNER'",
+          "tags": [],
+          "docs": "Large banner ad size (320x100 density-independent pixels)."
+        },
+        {
+          "name": "LEADERBOARD",
+          "value": "'LEADERBOARD'",
+          "tags": [],
+          "docs": "Interactive Advertising Bureau (IAB)\r\nleaderboard ad size (728x90 density-independent pixels)."
+        },
+        {
+          "name": "MEDIUM_RECTANGLE",
+          "value": "'MEDIUM_RECTANGLE'",
+          "tags": [],
+          "docs": "Interactive Advertising Bureau (IAB)\r\nmedium rectangle ad size (300x250 density-independent pixels)."
+        },
+        {
+          "name": "SMART_BANNER",
+          "value": "'SMART_BANNER'",
+          "tags": [],
+          "docs": "deprecated: A dynamically sized banner that is full-width and auto-height."
+        },
+        {
+          "name": "ADAPTIVE_BANNER",
+          "value": "'ADAPTIVE_BANNER'",
+          "tags": [],
+          "docs": "A dynamically sized banner that is full-width and auto-height."
+        },
+        {
+          "name": "CUSTOM",
+          "value": "'CUSTOM'",
+          "tags": [],
+          "docs": "To define a custom banner size, set your desired AdSize"
+        }
+      ]
+    },
+    {
+      "name": "AdPosition",
+      "slug": "adposition",
+      "members": [
+        {
+          "name": "TOP_CENTER",
+          "value": "'TOP_CENTER'",
+          "tags": [],
+          "docs": "Banner position be top-center"
+        },
+        {
+          "name": "CENTER",
+          "value": "'CENTER'",
+          "tags": [],
+          "docs": "Banner position be center"
+        },
+        {
+          "name": "BOTTOM_CENTER",
+          "value": "'BOTTOM_CENTER'",
+          "tags": [],
+          "docs": "Banner position be bottom-center(default)"
+        }
+      ]
+    }
+  ]
+}
