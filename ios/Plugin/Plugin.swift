@@ -259,8 +259,8 @@ public class AdMob: CAPPlugin, GADBannerViewDelegate, GADFullScreenContentDelega
         self.bridge?.triggerJSEvent(eventName: "bannerViewDidDismissScreen", target: "window")
     }
 
-    public func adViewWillLeaveApplication(_ bannerView: GADBannerView) {
-        NSLog("bannerViewWillLeaveApplication")
+    public func applicationDidEnterBackground(_ application: UIApplication) {
+        NSLog("applicationDidEnterBackground")
         self.bridge?.triggerJSEvent(eventName: "adViewWillLeaveApplication", target: "window")
     }
 
